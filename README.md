@@ -56,6 +56,11 @@ return [
         PermissionAction::RESTORE->value      => 'restore',
         PermissionAction::FORCE_DELETE->value => 'force_delete',
     ],
+    
+    /*
+     * The package prefix that is being used for package permissions.
+     */
+    'package_prefix' => 'package',
 ];
 
 ```
@@ -77,6 +82,7 @@ return [
         PermissionService::viewPermission(Activity::class),
         ...PermissionService::crudPermissions(User::class),
         ...PermissionService::crudPermissions(Customer::class, true, true),
+        ...PermissionService::packagePermission('nova'),
     ],
 ];
 ```
