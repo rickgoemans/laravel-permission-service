@@ -7,17 +7,17 @@ return [
     /*
      * The separator that's being used between the model its name and the action.
      */
-    'separator'      => '.',
+    'separator' => '.',
 
     /*
      * The names of the methods that reflect the action.
      */
-    'action_names'   => [
-        PermissionAction::VIEW->value         => 'view',
-        PermissionAction::CREATE->value       => 'create',
-        PermissionAction::UPDATE->value       => 'update',
-        PermissionAction::DELETE->value       => 'delete',
-        PermissionAction::RESTORE->value      => 'restore',
+    'action_names' => [
+        PermissionAction::VIEW->value => 'view',
+        PermissionAction::CREATE->value => 'create',
+        PermissionAction::UPDATE->value => 'update',
+        PermissionAction::DELETE->value => 'delete',
+        PermissionAction::RESTORE->value => 'restore',
         PermissionAction::FORCE_DELETE->value => 'force_delete',
     ],
 
