@@ -7,7 +7,7 @@ use Rickgoemans\LaravelPermissionService\Enums\PermissionAction;
 
 class PermissionService
 {
-    /** @param class-string $model */
+    /** @param  class-string  $model */
     public static function crudPermissions(string $model, bool $withRestore = false, bool $withForceDelete = false): array
     {
         $permissions = [
