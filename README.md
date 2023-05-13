@@ -61,6 +61,11 @@ return [
      * The package prefix that is being used for package permissions.
      */
     'package_prefix' => 'package',
+    
+    /*
+     * The application prefix that is being used for application permissions.
+     */
+    'application_prefix' => 'app',
 ];
 
 ```
@@ -83,6 +88,7 @@ return [
         ...PermissionService::crudPermissions(User::class),
         ...PermissionService::crudPermissions(Customer::class, true, true),
         ...PermissionService::packagePermission('nova'),
+        ...PermissionService::packagePermission('admin_panel'),
     ],
 ];
 ```

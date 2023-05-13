@@ -7,7 +7,7 @@ use Rickgoemans\LaravelPermissionService\Enums\PermissionAction;
 
 class PermissionService
 {
-    /** @param  class-string  $model */
+    /** @param class-string $model */
     public static function crudPermissions(string $model, bool $withRestore = false, bool $withForceDelete = false): array
     {
         $permissions = [
@@ -73,6 +73,14 @@ class PermissionService
         $separator = config('permission-service.separator');
 
         return "{$packagePrefix}{$separator}{$package}";
+    }
+
+    public static function appPermission(string $package): string
+    {
+        $applicationPrefix = config('permission-service.application_prefix');
+        $separator = config('permission-service.separator');
+
+        return "{$applicationPrefix}{$separator}{$package}";
     }
 
     protected static function modelName(string $model): string
