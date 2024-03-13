@@ -16,6 +16,6 @@ class LaravelPermissionServiceServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-permission-service')
-            ->hasConfigFile();
+            ->hasConfigFile('permission-service');
     }
 }
