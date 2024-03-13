@@ -104,7 +104,6 @@ use App\Models\Example;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
-use Rickgoemans\LaravelApiResponseHelpers\ApiResponse;
 
 class ExamplePolicy extends Controller {
     use HandlesAuthorization;

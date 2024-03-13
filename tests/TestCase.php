@@ -1,6 +1,6 @@
 <?php
 
-namespace Rickgoemans\LaravelApiResponseHelpers\Tests;
+namespace Rickgoemans\LaravelPermissionService\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
