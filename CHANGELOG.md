@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-permission-service` will be documented in this file.
 
+## v4.0.0 - Added Laravel 11 support - 2024-03-13
+
+- Added Laravel 11 support
+- Update according to Spatie's package skeleton
+
 ## Version 3.1 - Correctly updated files in tag - 2023-05-13
 
 Correct 3.0 release
