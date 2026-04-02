@@ -4,10 +4,10 @@ namespace Rickgoemans\LaravelPermissionService\Enums;
 
 enum PermissionAction: string
 {
-    case VIEW = 'view';
-    case CREATE = 'create';
-    case UPDATE = 'update';
-    case DELETE = 'delete';
-    case RESTORE = 'restore';
-    case FORCE_DELETE = 'force_delete';
+    case View = 'view';
+    case Create = 'create';
+    case Update = 'update';
+    case Delete = 'delete';
+    case Restore = 'restore';
+    case ForceDelete = 'force_delete';
 }
