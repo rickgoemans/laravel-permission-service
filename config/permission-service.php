@@ -13,12 +13,12 @@ return [
      * The names of the methods that reflect the action.
      */
     'action_names' => [
-        PermissionAction::VIEW->value => 'view',
-        PermissionAction::CREATE->value => 'create',
-        PermissionAction::UPDATE->value => 'update',
-        PermissionAction::DELETE->value => 'delete',
-        PermissionAction::RESTORE->value => 'restore',
-        PermissionAction::FORCE_DELETE->value => 'force_delete',
+        PermissionAction::View->name => 'view',
+        PermissionAction::Create->name => 'create',
+        PermissionAction::Update->name => 'update',
+        PermissionAction::Delete->name => 'delete',
+        PermissionAction::Restore->name => 'restore',
+        PermissionAction::ForceDelete->name => 'force_delete',
     ],
 
     /*

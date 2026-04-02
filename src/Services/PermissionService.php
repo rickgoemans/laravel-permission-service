@@ -35,37 +35,37 @@ class PermissionService
     /** @param  class-string<Model>  $model */
     public static function viewPermission(string $model): string
     {
-        return static::actionPermission($model, PermissionAction::VIEW);
+        return static::actionPermission($model, PermissionAction::View);
     }
 
     /** @param  class-string<Model>  $model */
     public static function createPermission(string $model): string
     {
-        return static::actionPermission($model, PermissionAction::CREATE);
+        return static::actionPermission($model, PermissionAction::Create);
     }
 
     /** @param  class-string<Model>  $model */
     public static function updatePermission(string $model): string
     {
-        return static::actionPermission($model, PermissionAction::UPDATE);
+        return static::actionPermission($model, PermissionAction::Update);
     }
 
     /** @param  class-string<Model>  $model */
     public static function deletePermission(string $model): string
     {
-        return static::actionPermission($model, PermissionAction::DELETE);
+        return static::actionPermission($model, PermissionAction::Delete);
     }
 
     /** @param  class-string<Model>  $model */
     public static function restorePermission(string $model): string
     {
-        return static::actionPermission($model, PermissionAction::RESTORE);
+        return static::actionPermission($model, PermissionAction::Restore);
     }
 
     /** @param  class-string<Model>  $model */
     public static function forceDeletePermission(string $model): string
     {
-        return static::actionPermission($model, PermissionAction::FORCE_DELETE);
+        return static::actionPermission($model, PermissionAction::ForceDelete);
     }
 
     /** @param  class-string<Model>  $model */
@@ -73,7 +73,7 @@ class PermissionService
     {
         $model = static::modelName($model);
         $separator = config('permission-service.separator');
-        $action = config("permission-service.action_names.{$action->value}");
+        $action = config("permission-service.action_names.{$action->name}");
 
         return "{$model}{$separator}{$action}";
     }
