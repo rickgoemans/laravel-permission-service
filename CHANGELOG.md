@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-permission-service` will be documented in this file.
 
+## v6.0.0 - 2026-04-02
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/rickgoemans/laravel-permission-service/pull/25
+* Bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/rickgoemans/laravel-permission-service/pull/27
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/rickgoemans/laravel-permission-service/pull/29
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/rickgoemans/laravel-permission-service/pull/28
+* feature/laravel-13-compatibility by @rickgoemans in https://github.com/rickgoemans/laravel-permission-service/pull/32
+
+**Full Changelog**: https://github.com/rickgoemans/laravel-permission-service/compare/v5.0.0...v6.0.0
+
 ## v5.0.0 - Laravel 12 support - 2025-02-28
 
 ### What's Changed
